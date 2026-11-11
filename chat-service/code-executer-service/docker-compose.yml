@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   zookeeper:
-    image: bitnami/zookeeper:latest
+    image: soldevelo/zookeeper:latest
     container_name: zookeeper-2
     ports:
       - "22181:2181"
@@ -15,7 +15,7 @@ services:
       retries: 10
 
   kafka:
-    image: bitnami/kafka:3.5.1
+    image: soldevelo/kafka:3.5.2
     container_name: kafka-2
     ports:
       - "9093:9093"  # Changed from 9092 to 9093
